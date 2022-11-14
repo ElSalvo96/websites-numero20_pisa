@@ -59,6 +59,7 @@ const createCol = (
 	img.className = 'image';
 	img.src = `images/menu/${item.source}`;
 	img.alt = `${item.alt}`;
+	img.loading = 'lazy';
 	// img.dataset.aos = 'flip-down';
 	// img.dataset.aosDuration = '2000';
 	// img.dataset.aosDelay = String(colNumber * 100);
