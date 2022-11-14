@@ -2,18 +2,20 @@ body {
 	font-family: 'Merienda';
 	font-size: 15px;
 	overflow-x: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url('/images/background.jpg') !important;
+	background-position: center center;
 }
+
 .nav-item {
 	padding-right: 12px;
 	padding-left: 12px;
 }
 
 .nav-link.active {
-	background-color: lightgrey !important;
-}
-
-.carousel-caption {
-	top: 40%;
+	background-color: rgb(235, 229, 229) !important;
 }
 
 .navMenu {
@@ -21,8 +23,12 @@ body {
 	padding-bottom: 20px;
 }
 
-#map {
-	height: 440px;
+.carousel-caption {
+	top: 40%;
+}
+
+.carousel-item > img {
+	max-height: 1024;
 }
 
 @media screen and (max-width: 1920px) {

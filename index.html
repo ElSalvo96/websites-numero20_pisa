@@ -22,10 +22,6 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/menu.css" />
 		<link
-			href="https://fonts.googleapis.com/css?family=Merienda"
-			rel="stylesheet"
-		/>
-		<link
 			href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
 			rel="stylesheet"
 		/>
@@ -39,10 +35,14 @@
 		data-target=".navbar"
 		data-offset="50"
 	>
-		<div class="rotate-vert-center" id="loader">
-			<div class="face">
-				<img src="images/logo.jpg" width="150" height="150" alt="" />
-			</div>
+		<div class="loader-div" id="loader">
+			<img
+				class="rotate-center"
+				src="images/logo.png"
+				width="150"
+				height="150"
+				alt=""
+			/>
 		</div>
 		<div id="content" class="invisible">
 			<div id="Benvenuti">
@@ -51,9 +51,9 @@
 					class="navbar navbar-expand-lg navbar fixed-top navbar-dark bg-dark"
 				>
 					<div class="navbar-brand d-flex align-items-center">
-						<a class="navbar-brand" href="#Benvenuti">
+						<a class="navbar-brand" href="#Benvenuti" id="brand">
 							<img
-								src="images/logo.jpg"
+								src="images/logo.png"
 								width="50"
 								height="50"
 								class="d-inline-block"
@@ -116,36 +116,47 @@
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img
-								class="d-block w-100 img-fluid"
-								src="images/slider1.jpg"
-								alt="First slide"
+								class="d-block mx-auto img-fluid"
+								src="images/menu/raffaella.jpg"
+								alt="Raffaella carrà"
 							/>
 							<div class="carousel-caption">
 								<h2>Benvenuti!</h2>
-								<p>...</p>
+								<p>al NUMEROVENTI</p>
 							</div>
 						</div>
 						<div class="carousel-item">
 							<img
-								class="d-block w-100 img-fluid"
-								src="images/slider2.jpg"
+								class="d-block mx-auto img-fluid"
+								src="images/page/us.jpg"
 								alt="Second slide"
 							/>
-							<div class="carousel-caption">
-								<h2>Cucina Tradizionale Italiana</h2>
+							<!-- <div class="carousel-caption">
+								<h2>text</h2>
 								<p>...</p>
-							</div>
+							</div> -->
 						</div>
 						<div class="carousel-item">
 							<img
-								class="d-block w-100 img-fluid"
-								src="images/slider3.jpg"
-								alt="Third slide"
+								class="d-block mx-auto img-fluid"
+								src="images/page/DSC08768.jpg"
+								alt="Kill your bad day"
 							/>
-							<div class="carousel-caption">
-								<h2>Prodotti Selezionati</h2>
+							<!-- <div class="carousel-caption">
+								<h2>text</h2>
 								<p>...</p>
-							</div>
+							</div> -->
+						</div>
+						<div class="carousel-item">
+							<img
+								class="d-block mx-auto img-fluid"
+								src="images/page/DSC09058.jpg"
+								alt="From outside"
+							/>
+							<!-- <div class="carousel-caption">
+								<h2>text</h2>
+								<p>...</p>
+							</div> -->
 						</div>
 					</div>
 					<a
@@ -178,7 +189,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-8">
 						<h3>Location</h3>
 						<p>
 							Grazie per esserti fermato. Siamo l'ultimo autentico Cocktail bar
@@ -208,34 +219,13 @@
 							Scriveteci qui per una prenotazione oppure chiamateci
 						</p>
 					</div>
-					<div class="col-md-6" data-aos="fade-up">
-						<img class="img-fluid" src="images/location.jpg" />
-					</div>
-				</div>
-				<div class="row"><br /></div>
-				<div class="row">
-					<div class="col-md-6 order-md-1 order-2" data-aos="fade-up">
-						<img class="img-fluid" src="images/ambiente.jpg" />
-					</div>
-					<div class="col-md-6 order-md-12 order-1">
-						<h3>L'ambiente</h3>
-						<p>
-							Grazie per esserti fermato. Siamo l'ultimo autentico ristorante
-							italiano a Milano, che serve deliziosi piatti della cucina
-							italiana cucinati dai migliori chef. Ti bastano pochi minuti per
-							navigare attraverso il nostro sito Web e controllare il nostro
-							menu .Speriamo che ti unirai presto a noi per una superba
-							esperienza culinaria italiana.
-						</p>
-						<h5>Un'esperienza unica</h5>
-						<p>
-							Grazie per esserti fermato. Siamo l'ultimo autentico ristorante
-							italiano a Milano, che serve deliziosi piatti della cucina
-							italiana cucinati dai migliori chef. Ti bastano pochi minuti per
-							navigare attraverso il nostro sito Web e controllare il nostro
-							menu .Speriamo che ti unirai presto a noi per una superba
-							esperienza culinaria italiana.
-						</p>
+					<div class="col-md-4" data-aos="fade-up">
+						<img
+							class="img-fluid"
+							src="images/page/numerov.jpg"
+							height="512"
+							width="512"
+						/>
 					</div>
 				</div>
 				<!--- End of ChiSiamo -->
@@ -282,12 +272,12 @@
 								href="https://www.instagram.com/numeroventi_pisa/"
 								><i class="fab fa-instagram"></i
 							></a>
-							<a
-								class="social-icon invisible"
+							<!-- <a
+								class="social-icon"
 								target="_blank"
 								href="https://www.facebook.com/rubiktechnologiesShpk/"
 								><i class="fab fa-facebook"></i
-							></a>
+							></a> -->
 						</p>
 					</div>
 					<div class="col m-0">
@@ -352,14 +342,8 @@
 			src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
 		></script>
 		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-		<script type="text/javascript" src="js/map.js"></script>
 		<script type="text/javascript" src="js/menu.js"></script>
 		<script type="text/javascript" src="js/smooth-scroll.js"></script>
 		<script type="text/javascript" src="js/image-effect.js"></script>
-		<script
-			async
-			defer
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFZjOV0KA68G2YAh-rn7I3qKqCQEh_Ja0&callback=myMap"
-		></script>
 	</body>
 </html>
