@@ -35,6 +35,9 @@ body {
 	.only-mobile {
 		visibility: visible;
 	}
+	.margin-mobile {
+		margin-bottom: 2rem;
+	}
 }
 
 .footer {

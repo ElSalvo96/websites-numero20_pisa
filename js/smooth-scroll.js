@@ -16,7 +16,7 @@ $(document).ready(function () {
 			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			$('html, body').animate(
 				{
-					scrollTop: $(hash).offset().top,
+					scrollTop: $(hash).offset().top - 20,
 				},
 				800,
 				function () {
@@ -26,4 +26,8 @@ $(document).ready(function () {
 			);
 		} // End if
 	});
+});
+
+$('.navbar-nav>li>a').on('click', function () {
+	$('.navbar-collapse').collapse('hide');
 });
