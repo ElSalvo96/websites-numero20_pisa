@@ -3,20 +3,19 @@ $(document).ready(function () {
 	$('body').scrollspy({ target: '.navbar', offset: 50 });
 
 	// Add smooth scrolling on all links inside the navbar
-	$('#navbarText a, .navbar-brand').on('click', function (event) {
+	$('#navbarText a, #brand').on('click', function (event) {
 		// Make sure this.hash has a value before overriding default behavior
 		if (this.hash !== '') {
 			// Prevent default anchor click behavior
 			event.preventDefault();
 
-			// Store hash
-			var hash = this.hash;
-
+			const hash = this.hash;
+			const scrollTop = $(hash).offset().top;
 			// Using jQuery's animate() method to add smooth page scroll
 			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			$('html, body').animate(
 				{
-					scrollTop: $(hash).offset().top - 20,
+					scrollTop: scrollTop,
 				},
 				800,
 				function () {
@@ -26,8 +25,7 @@ $(document).ready(function () {
 			);
 		} // End if
 	});
-});
-
-$('.navbar-nav>li>a').on('click', function () {
-	$('.navbar-collapse').collapse('hide');
+	$('.navbar-nav>li>a').on('click', function () {
+		$('.navbar-collapse').collapse('hide');
+	});
 });

@@ -56,15 +56,18 @@ const createCol = (item, rowNumber, colNumber) => {
     img.className = 'image';
     img.src = `images/menu/${item.source}`;
     img.alt = `${item.alt}`;
-    img.dataset.aos = 'flip-down';
-    img.dataset.aosDuration = '2000';
-    img.dataset.aosDelay = String(colNumber * 100);
-    img.dataset.aosOffset = '10';
-    img.dataset.mirror = 'true';
+    // img.dataset.aos = 'flip-down';
+    // img.dataset.aosDuration = '2000';
+    // img.dataset.aosDelay = String(colNumber * 100);
+    // img.dataset.aosOffset = '0';
+    // img.dataset.mirror = 'true';
     const textDiv = document.createElement('div');
     textDiv.className = 'middle';
     const p = document.createElement('p');
     p.className = 'text';
+    //setting this css style solving problem with new line in textContent
+    //add \r\n in text everywhere You want for line-break (new line)
+    p.setAttribute('style', 'white-space: pre;');
     p.textContent = item.description;
     textDiv.appendChild(p);
     col.appendChild(img);
