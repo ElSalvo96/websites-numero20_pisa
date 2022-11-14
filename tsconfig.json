@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"target": "es6",
+		"lib": ["ES2015", "DOM", "ES2015.Promise"],
+		"allowJs": true,
+		"alwaysStrict": true
+	},
+	"files": ["js/menu.ts"]
+}

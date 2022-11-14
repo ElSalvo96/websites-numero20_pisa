@@ -20,6 +20,7 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu.css" />
 		<link
 			href="https://fonts.googleapis.com/css?family=Merienda"
 			rel="stylesheet"
@@ -29,7 +30,7 @@
 			rel="stylesheet"
 		/>
 
-		<title>Numero 20</title>
+		<title>numero venti</title>
 		<link rel="icon" href="images/logo.jpg" />
 	</head>
 	<body
@@ -49,16 +50,25 @@
 				<nav
 					class="navbar navbar-expand-lg navbar fixed-top navbar-dark bg-dark"
 				>
-					<a class="navbar-brand" href="#Benvenuti">
-						<img
-							src="images/logo.jpg"
-							width="50"
-							height="50"
-							class="d-inline-block"
-							alt=""
-						/>
-						Numero 20
-					</a>
+					<div class="navbar-brand d-flex align-items-center">
+						<a class="navbar-brand" href="#Benvenuti">
+							<img
+								src="images/logo.jpg"
+								width="50"
+								height="50"
+								class="d-inline-block"
+								alt=""
+							/>
+							numero venti
+						</a>
+						<a
+							class="social-icon pl-2"
+							target="_blank"
+							href="https://www.instagram.com/numeroventi_pisa/"
+							><i class="fab fa-instagram"></i
+						></a>
+					</div>
+
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -236,8 +246,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-					<div class="elfsight-app-a2f6c7ad-771d-495c-8d45-8820df879ef6"></div>
+					<div class="col" id="CocktailListMenu"></div>
 				</div>
 				<!--- End of CocktailList -->
 				<!--- Start of Dove Siamo -->
@@ -247,12 +256,17 @@
 					</div>
 				</div>
 				<div class="row">
-					<div id="map" class="col-md-9 mappa"></div>
-					<div class="col-md-3">
+					<div class="col">
 						<h3>Indirizzo:</h3>
-						<p>Via Santa Cecilia, 32/34, 56127 Pisa PI</p>
-						<h3>Email:</h3>
-						<p>propvaprovaprova@gmail.com</p>
+						<a
+							style="cursor: pointer; position: relative; display: block"
+							href="https://www.google.it/maps/place/numeroventi/@43.719504,10.4032654,15z/data=!4m2!3m1!1s0x0:0x2b80f5749a16af3b?sa=X"
+							jsaction="trigger.Ez7VMc"
+							tabindex="0"
+							target="_blank"
+						>
+							<p>Via Santa Cecilia, 32/34, 56127 Pisa PI</p>
+						</a>
 					</div>
 				</div>
 				<!--- End o f Dove Siamo -->
@@ -281,7 +295,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col">
+					<div class="col margin-mobile">
 						<p class="text-center">
 							<a
 								href="https://www.linkedin.com/in/fabiosalvini/"
@@ -303,22 +317,24 @@
 		<footer class="container">
 			<div class="row only-mobile">
 				<div class="col-6">
-					<a class="btn btn-primary btn-block text-center" href="tel:+390000000"
+					<a
+						class="btn btn-primary btn-block text-center"
+						href="tel:+393803420113"
 						><i class="fa fa-phone" aria-hidden="true"></i> Chiama</a
 					>
 				</div>
 				<div class="col-6">
 					<a
 						class="btn btn-success btn-block text-center"
-						href="https://api.whatsapp.com/send?phone=+390000000"
+						href="https://api.whatsapp.com/send?phone=+393803420113"
 						><i class="fab fa-whatsapp" aria-hidden="true"></i> Whatsapp</a
 					>
 				</div>
 			</div>
 		</footer>
 		<script
-			src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-			integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
 			crossorigin="anonymous"
 		></script>
 		<script
@@ -335,9 +351,10 @@
 			defer
 			src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
 		></script>
-		<script type="text/javascript" src="js/map.js"></script>
-		<script type="text/javascript" src="js/smooth-scroll.js"></script>
 		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type="text/javascript" src="js/smooth-scroll.js"></script>
 		<script type="text/javascript" src="js/image-effect.js"></script>
 		<script
 			async

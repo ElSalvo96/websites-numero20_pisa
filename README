@@ -1,0 +1,25 @@
+For compile file menu.ts, install typescript
+
+    npm install -g typescript
+
+    Re/open an active terminal and then check with: tsc -v
+
+Use command for compile:
+
+    tsc js/menu.ts
+
+In case of problems:
+
+    Updating the Path environment variable:
+
+    Search Environment Variables in the start menu
+    Select Edit the system environment variables
+    Select the Environment Variables... button in the Advanced section
+    Look in the System Variables section for the Path variable
+    Double click that variable
+    Select New...
+    Enter the location your npm config downloads global packages at. You can find out where by using the npm list -g command. For me, it was at
+        C:\Users\MyUsername\AppData\Roaming\npm — be sure to replace MyUsername with your username
+    Re/open an active terminal
+
+    Use the tsc -v command to observe the result
