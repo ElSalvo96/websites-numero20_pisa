@@ -21,7 +21,7 @@ window.addEventListener('load', (event) => {
 			document.getElementById('loaderScript').remove();
 			const elements = $('.animate');
 			elements.removeClass('animate');
-		}, 3000);
+		}, 1500);
 	};
 
 	const endTime = new Date().getTime();
