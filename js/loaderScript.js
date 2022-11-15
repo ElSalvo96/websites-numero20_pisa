@@ -14,6 +14,7 @@ window.addEventListener('load', (event) => {
 			ride: true,
 		});
 
+		document.body.classList.remove('overflow-hidden');
 		setTimeout(() => {
 			loader.remove();
 			document.getElementById('loaderStylesheet').remove();
