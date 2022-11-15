@@ -4,7 +4,7 @@
 }
 
 .loader-div {
-	position: absolute;
+	position: fixed;
 	top: 25%;
 	bottom: 0;
 	left: 0;
