@@ -2,11 +2,30 @@ body {
 	font-family: 'Merienda';
 	font-size: 15px;
 	overflow-x: hidden;
+}
+
+#image-bg-object {
+	overflow: hidden;
+	position: fixed;
+
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-image: url('/images/background.jpg') !important;
 	background-position: center center;
+
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+#content {
+	margin-top: 86px;
 }
 
 .nav-item {
@@ -31,10 +50,14 @@ body {
 	max-height: 1024;
 }
 
-@media screen and (max-width: 1920px) {
-	.only-mobile {
-		visibility: hidden;
-	}
+.only-mobile {
+	visibility: hidden;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	z-index: -1;
 }
 
 @media screen and (max-width: 506px) {
@@ -43,6 +66,12 @@ body {
 	}
 	.margin-mobile {
 		margin-bottom: 2rem;
+	}
+	.carousel-item > img {
+		max-height: 322;
+	}
+	footer {
+		z-index: 1000;
 	}
 }
 
@@ -53,10 +82,4 @@ body {
 }
 .social-icon {
 	font-size: 28;
-}
-
-footer {
-	position: fixed;
-	bottom: 0px;
-	padding-top: 20px;
 }
