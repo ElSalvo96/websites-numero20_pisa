@@ -6,13 +6,19 @@
 			type="text/javascript"
 			src="js/loaderScript.js"
 			id="loaderScript"
+			preload
 		></script>
 		<link
 			rel="stylesheet"
 			id="loaderStylesheet"
 			type="text/css"
 			href="css/loader.css"
+			preload
 		/>
+		<title>numero venti</title>
+		<link rel="preload" href="images/logo.png" as="image" />
+		<link rel="preload" href="images/background.jpg" as="image" />
+		<link rel="icon" href="images/logo.jpg" />
 		<link
 			rel="stylesheet"
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -20,14 +26,12 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/effects.css" />
 		<link rel="stylesheet" type="text/css" href="css/menu.css" />
 		<link
 			href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
 			rel="stylesheet"
 		/>
-
-		<title>numero venti</title>
-		<link rel="icon" href="images/logo.jpg" />
 	</head>
 	<body
 		class="text-light bg-dark"
@@ -35,73 +39,81 @@
 		data-target=".navbar"
 		data-offset="50"
 	>
+		<div id="image-bg-object" class="kenburns-top">
+			<img
+				src="images/background.jpg"
+				fetchPriority="high"
+				alt=""
+				style="display: none"
+			/>
+		</div>
 		<div class="loader-div" id="loader">
 			<img
 				class="rotate-center"
 				src="images/logo.png"
 				width="150"
 				height="150"
+				fetchPriority="high"
 				alt=""
 			/>
 		</div>
-		<div id="content" class="invisible">
-			<!---Start navigation Bar -->
-			<nav class="navbar navbar-expand-lg navbar fixed-top navbar-dark bg-dark">
-				<div class="navbar-brand d-flex align-items-center">
-					<a class="navbar-brand" href="#Benvenuti" id="brand">
-						<img
-							src="images/logo.png"
-							width="50"
-							height="50"
-							class="d-inline-block"
-							alt=""
-						/>
-						numero venti
-					</a>
-					<a
-						class="social-icon pl-2"
-						target="_blank"
-						href="https://www.instagram.com/numeroventi_pisa/"
-						><i class="fab fa-instagram"></i
-					></a>
-				</div>
+		<!---Start navigation Bar -->
+		<nav
+			class="navbar navbar-expand-lg navbar fixed-top navbar-dark bg-dark invisible bounce-in-top"
+			id="navbar"
+		>
+			<div class="navbar-brand d-flex align-items-center">
+				<a class="navbar-brand" href="#Benvenuti" id="brand">
+					<img
+						src="images/logo.png"
+						width="50"
+						height="50"
+						class="d-inline-block"
+						alt=""
+					/>
+					numero venti
+				</a>
+				<a
+					class="social-icon pl-2"
+					target="_blank"
+					href="https://www.instagram.com/numeroventi_pisa/"
+					><i class="fab fa-instagram"></i
+				></a>
+			</div>
 
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarText"
-					aria-controls="navbarText"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarText">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="#Benvenuti">Benvenuti</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#ChiSiamo">Chi siamo</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#CocktailList">Cocktail List</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#DoveSiamo">Dove Siamo</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<!--- End Navigation Bar -->
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarText"
+				aria-controls="navbarText"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#Benvenuti">Benvenuti</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#ChiSiamo">Chi siamo</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#CocktailList">Cocktail List</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#DoveSiamo">Dove Siamo</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!--- End Navigation Bar -->
+		<div id="content" class="invisible">
 			<div id="Benvenuti">
 				<!--- Start Carousel -->
-				<div
-					id="carouselIndicators"
-					class="carousel slide"
-					data-ride="carousel"
-				>
+				<div id="carouselIndicators" class="carousel slide">
 					<ol class="carousel-indicators">
 						<li
 							data-target="#carouselIndicators"
@@ -110,9 +122,10 @@
 						></li>
 						<li data-target="#carouselIndicators" data-slide-to="1"></li>
 						<li data-target="#carouselIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselIndicators" data-slide-to="3"></li>
 					</ol>
 					<div class="carousel-inner">
-						<div class="carousel-item active">
+						<div class="carousel-item active animate">
 							<img
 								class="d-block mx-auto img-fluid"
 								src="images/menu/raffaella.jpg"
@@ -183,7 +196,9 @@
 			<div class="container-fluid">
 				<div class="row" id="ChiSiamo">
 					<div class="col navMenu">
-						<h2 class="text-center">~ Cocktail bar Pisa ~</h2>
+						<h2 class="text-center tracking-in-contract-bck">
+							~ Cocktail bar Pisa ~
+						</h2>
 					</div>
 				</div>
 				<div class="row">

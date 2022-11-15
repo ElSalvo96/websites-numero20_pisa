@@ -2,11 +2,26 @@ body {
 	font-family: 'Merienda';
 	font-size: 15px;
 	overflow-x: hidden;
+}
+
+#image-bg-object {
+	overflow: hidden;
+	position: fixed;
+
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-image: url('/images/background.jpg') !important;
 	background-position: center center;
+
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 #content {
