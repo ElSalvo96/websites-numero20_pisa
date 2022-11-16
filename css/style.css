@@ -22,10 +22,20 @@ body {
 	transform: translate3d(0, 0, 0);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	pointer-events: none;
 }
 
-#content {
-	margin-top: 86px;
+.loading .navbar {
+	display: none;
+}
+.loading #Benvenuti {
+	display: none;
+}
+
+.loading .container-fluid {
+	margin-top: 0px;
+	display: none;
+	overflow: hidden;
 }
 
 .nav-item {
@@ -47,7 +57,6 @@ body {
 }
 
 .carousel-item {
-	position: relative;
 	height: 1024;
 	overflow: hidden;
 }
