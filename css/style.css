@@ -46,8 +46,21 @@ body {
 	top: 40%;
 }
 
+.carousel-item {
+	position: relative;
+	height: 1024;
+	overflow: hidden;
+}
 .carousel-item > img {
-	max-height: 1024;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	animation: none;
+	transition: none;
 }
 
 .only-mobile {
@@ -59,16 +72,16 @@ footer {
 	bottom: 0px;
 	z-index: -1;
 }
-
-@media screen and (max-width: 506px) {
+/* Equal to xs of bootstrap 4.0 Responsive breakpoints */
+@media screen and (max-width: 575.98px) {
 	.only-mobile {
 		visibility: visible;
 	}
 	.margin-mobile {
 		margin-bottom: 2rem;
 	}
-	.carousel-item > img {
-		max-height: 322;
+	.carousel-item {
+		height: 512;
 	}
 	footer {
 		z-index: 1000;
