@@ -16,11 +16,11 @@ window.addEventListener('load', (event) => {
 
 		document.body.classList.remove('overflow-hidden');
 		setTimeout(() => {
-			loader.remove();
-			document.getElementById('loaderStylesheet').remove();
-			document.getElementById('loaderScript').remove();
-			const elements = $('.animate');
-			elements.removeClass('animate');
+			// loader.remove();
+			// document.getElementById('loaderStylesheet').remove();
+			// document.getElementById('loaderScript').remove();
+			// const elements = $('.animate');
+			// elements.removeClass('animate');
 		}, 1500);
 	};
 
