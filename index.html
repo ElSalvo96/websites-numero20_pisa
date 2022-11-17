@@ -16,9 +16,9 @@
 			preload
 		></script>
 		<title>numeroventi</title>
-		<link rel="preload" href="images/logo.png" as="image" />
-		<link rel="preload" href="images/background.jpg" as="image" />
-		<link rel="icon" href="images/logo.jpg" />
+		<link rel="preload" href="resources/logo.png" as="image" />
+		<link rel="preload" href="resources/background.jpg" as="image" />
+		<link rel="icon" href="resources/logo.jpg" />
 		<link
 			rel="stylesheet"
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -37,7 +37,7 @@
 	>
 		<div id="image-bg-object" class="kenburns-top">
 			<img
-				src="images/background.jpg"
+				src="resources/background.jpg"
 				fetchPriority="high"
 				alt=""
 				style="display: none"
@@ -46,7 +46,7 @@
 		<div class="loader-div" id="loader">
 			<img
 				class="rotate-center"
-				src="images/logo.png"
+				src="resources/logo.png"
 				width="150"
 				height="150"
 				fetchPriority="high"
@@ -61,7 +61,7 @@
 			<div class="navbar-brand d-flex align-items-center">
 				<a class="navbar-brand" href="#Benvenuti" id="brand">
 					<img
-						src="images/logo.png"
+						src="resources/logo.png"
 						width="50"
 						height="50"
 						class="d-inline-block"
@@ -123,7 +123,7 @@
 					<div class="carousel-item active animate">
 						<img
 							class="d-block mx-auto img-fluid"
-							src="images/menu/raffaella.jpg"
+							src="resources/menu/raffaella.jpg"
 							alt="Raffaella carrà"
 						/>
 						<div class="carousel-caption">
@@ -134,7 +134,7 @@
 					<div class="carousel-item">
 						<img
 							class="d-block mx-auto img-fluid"
-							src="images/page/us.jpg"
+							src="resources/page/us.jpg"
 							alt="Second slide"
 						/>
 						<!-- <div class="carousel-caption">
@@ -145,7 +145,7 @@
 					<div class="carousel-item">
 						<img
 							class="d-block mx-auto img-fluid"
-							src="images/page/DSC08768.jpg"
+							src="resources/page/DSC08768.jpg"
 							alt="Kill your bad day"
 						/>
 						<!-- <div class="carousel-caption">
@@ -156,7 +156,7 @@
 					<div class="carousel-item">
 						<img
 							class="d-block mx-auto img-fluid"
-							src="images/page/DSC09058.jpg"
+							src="resources/page/DSC09058.jpg"
 							alt="From outside"
 						/>
 						<!-- <div class="carousel-caption">
@@ -235,7 +235,7 @@
 				<div class="col-md-4">
 					<img
 						class="img-fluid"
-						src="images/page/numerov.jpg"
+						src="resources/page/numerov.jpg"
 						height="512"
 						width="512"
 					/>
@@ -243,9 +243,16 @@
 			</div>
 			<!--- End of ChiSiamo -->
 			<!--- Start of CocktailList-->
-			<div class="row" id="CocktailList">
-				<div class="col navMenu">
+			<div
+				class="row navMenu align-items-center justify-content-center"
+				id="CocktailList"
+			>
+				<div class="col d-flex align-items-center justify-content-center">
 					<h2 class="text-center">~ Cocktail List ~</h2>
+					<a class="ml-3 text-center" class="downloadTag">
+						<img src="resources/drink.svg" />
+						<span class="">Download</span>
+					</a>
 				</div>
 			</div>
 			<div class="row">

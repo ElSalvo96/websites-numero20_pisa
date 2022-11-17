@@ -54,7 +54,7 @@ const createCol = (item, rowNumber, colNumber) => {
     col.className = `col-12 col-md-6 col-xl-3 menuContainer py-1 px-1`;
     const img = document.createElement('img');
     img.className = 'image';
-    img.src = `images/menu/${item.source}`;
+    img.src = `resources/menu/${item.source}`;
     img.alt = `${item.alt}`;
     img.loading = 'lazy';
     const textDiv = document.createElement('div');

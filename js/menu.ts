@@ -57,7 +57,7 @@ const createCol = (
 
 	const img = document.createElement('img');
 	img.className = 'image';
-	img.src = `images/menu/${item.source}`;
+	img.src = `resources/menu/${item.source}`;
 	img.alt = `${item.alt}`;
 	img.loading = 'lazy';
 
