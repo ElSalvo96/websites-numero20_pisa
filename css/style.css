@@ -81,6 +81,12 @@ footer {
 	bottom: 0px;
 	z-index: -1;
 }
+/* Equal to lg of bootstrap 4.0 Responsive breakpoints */
+@media screen and (max-width: 991.98px) {
+	.carousel-item {
+		height: 768;
+	}
+}
 /* Equal to xs of bootstrap 4.0 Responsive breakpoints */
 @media screen and (max-width: 575.98px) {
 	.only-mobile {
@@ -104,4 +110,67 @@ footer {
 }
 .social-icon {
 	font-size: 28;
+}
+.downloadTag {
+	text-decoration: none !important;
+	overflow: hidden;
+	position: relative;
+}
+.downloadTag:hover,
+.downloadTag:active {
+	transform: translateX(2px) translateY(2px);
+	box-shadow: -5px -5px 20px rgb(229 216 216 / 200%);
+}
+
+.downloadTag .liquid {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	width: 200px;
+	height: 220px;
+	/* background-color: rgba(0, 222, 255, 0.3);
+	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5); */
+	transition: 1s;
+	pointer-events: none;
+}
+
+.downloadTag .liquid::after,
+.downloadTag .liquid::before {
+	content: '';
+	width: 200%;
+	height: 200%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -75%);
+	/* background: #000; */
+	box-shadow: inset 0 0 6px rgba(202, 228, 225, 0.98),
+		0 0 30px rgba(202, 228, 225, 0.42), inset 0 0 12px rgba(30, 132, 242, 0.58),
+		inset 0 0 22px rgba(30, 132, 242, 0.84),
+		inset 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px rgba(30, 132, 242, 1);
+}
+
+.downloadTag .liquid::before {
+	border-radius: 45%;
+	/* background: rgba(20, 20, 20, 1); */
+	animation: animate 5s linear infinite;
+}
+
+.downloadTag .liquid::after {
+	border-radius: 40%;
+	/* background: rgba(20, 20, 20, 0.5); */
+	animation: animate 10s linear infinite;
+}
+
+.downloadTag:hover .liquid {
+	top: -120px;
+}
+
+@keyframes animate {
+	0% {
+		transform: translate(-50%, -75%) rotate(0deg);
+	}
+	100% {
+		transform: translate(-50%, -75%) rotate(360deg);
+	}
 }
