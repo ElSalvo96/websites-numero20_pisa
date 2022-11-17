@@ -2,12 +2,6 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<script
-			type="text/javascript"
-			src="js/loaderScript.js"
-			id="loaderScript"
-			preload
-		></script>
 		<link
 			rel="stylesheet"
 			id="loaderStylesheet"
@@ -15,6 +9,12 @@
 			href="css/loader.css"
 			preload
 		/>
+		<script
+			type="text/javascript"
+			src="js/loaderScript.js"
+			id="loaderScript"
+			preload
+		></script>
 		<title>numeroventi</title>
 		<link rel="preload" href="images/logo.png" as="image" />
 		<link rel="preload" href="images/background.jpg" as="image" />
@@ -28,13 +28,9 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/effects.css" />
 		<link rel="stylesheet" type="text/css" href="css/menu.css" />
-		<link
-			href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
-			rel="stylesheet"
-		/>
 	</head>
 	<body
-		class="text-light bg-dark overflow-hidden"
+		class="text-light bg-dark overflow-hidden loading"
 		data-spy="scroll"
 		data-target=".navbar"
 		data-offset="50"
@@ -59,7 +55,7 @@
 		</div>
 		<!---Start navigation Bar -->
 		<nav
-			class="navbar navbar-expand-lg navbar fixed-top navbar-dark bg-dark invisible bounce-in-top"
+			class="navbar navbar-expand-lg navbar fixed-top navbar-dark bg-dark bounce-in-top"
 			id="navbar"
 		>
 			<div class="navbar-brand d-flex align-items-center">
@@ -110,101 +106,100 @@
 			</div>
 		</nav>
 		<!--- End Navigation Bar -->
-		<div id="content" class="invisible">
-			<div id="Benvenuti">
-				<!--- Start Carousel -->
-				<div id="carouselIndicators" class="carousel slide">
-					<ol class="carousel-indicators">
-						<li
-							data-target="#carouselIndicators"
-							data-slide-to="0"
-							class="active"
-						></li>
-						<li data-target="#carouselIndicators" data-slide-to="1"></li>
-						<li data-target="#carouselIndicators" data-slide-to="2"></li>
-						<li data-target="#carouselIndicators" data-slide-to="3"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="carousel-item active animate">
-							<img
-								class="d-block mx-auto img-fluid"
-								src="images/menu/raffaella.jpg"
-								alt="Raffaella carrà"
-							/>
-							<div class="carousel-caption">
-								<h2>Benvenuti!</h2>
-								<p>al NUMEROVENTI</p>
-							</div>
-						</div>
-						<div class="carousel-item">
-							<img
-								class="d-block mx-auto img-fluid"
-								src="images/page/us.jpg"
-								alt="Second slide"
-							/>
-							<!-- <div class="carousel-caption">
-								<h2>text</h2>
-								<p>...</p>
-							</div> -->
-						</div>
-						<div class="carousel-item">
-							<img
-								class="d-block mx-auto img-fluid"
-								src="images/page/DSC08768.jpg"
-								alt="Kill your bad day"
-							/>
-							<!-- <div class="carousel-caption">
-								<h2>text</h2>
-								<p>...</p>
-							</div> -->
-						</div>
-						<div class="carousel-item">
-							<img
-								class="d-block mx-auto img-fluid"
-								src="images/page/DSC09058.jpg"
-								alt="From outside"
-							/>
-							<!-- <div class="carousel-caption">
-								<h2>text</h2>
-								<p>...</p>
-							</div> -->
+		<!--- Start Carousel -->
+		<div id="Benvenuti">
+			<div id="carouselIndicators" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li
+						data-target="#carouselIndicators"
+						data-slide-to="0"
+						class="active"
+					></li>
+					<li data-target="#carouselIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselIndicators" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active animate">
+						<img
+							class="d-block mx-auto img-fluid"
+							src="images/menu/raffaella.jpg"
+							alt="Raffaella carrà"
+						/>
+						<div class="carousel-caption">
+							<h2>Benvenuti!</h2>
+							<p>al NUMEROVENTI</p>
 						</div>
 					</div>
-					<a
-						class="carousel-control-prev"
-						href="#carouselIndicators"
-						role="button"
-						data-slide="prev"
-					>
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a
-						class="carousel-control-next"
-						href="#carouselIndicators"
-						role="button"
-						data-slide="next"
-					>
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
+					<div class="carousel-item">
+						<img
+							class="d-block mx-auto img-fluid"
+							src="images/page/us.jpg"
+							alt="Second slide"
+						/>
+						<!-- <div class="carousel-caption">
+											<h2>text</h2>
+											<p>...</p>
+										</div> -->
+					</div>
+					<div class="carousel-item">
+						<img
+							class="d-block mx-auto img-fluid"
+							src="images/page/DSC08768.jpg"
+							alt="Kill your bad day"
+						/>
+						<!-- <div class="carousel-caption">
+											<h2>text</h2>
+											<p>...</p>
+										</div> -->
+					</div>
+					<div class="carousel-item">
+						<img
+							class="d-block mx-auto img-fluid"
+							src="images/page/DSC09058.jpg"
+							alt="From outside"
+						/>
+						<!-- <div class="carousel-caption">
+											<h2>text</h2>
+											<p>...</p>
+										</div> -->
+					</div>
 				</div>
-				<!--- End of Carousel -->
+				<a
+					class="carousel-control-prev"
+					href="#carouselIndicators"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a
+					class="carousel-control-next"
+					href="#carouselIndicators"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-
+		</div>
+		<!--- End of Carousel -->
+		<div class="container-fluid">
 			<!--- ChiSiamo-->
-			<div class="container-fluid">
-				<div class="row" id="ChiSiamo">
-					<div class="col navMenu" data-aos="fade-up">
-						<h2 class="text-center tracking-in-contract-bck">
-							~ Cocktail bar Pisa ~
-						</h2>
-					</div>
+			<div class="row" id="ChiSiamo">
+				<div class="col navMenu">
+					<h2 class="text-center tracking-in-contract-bck">
+						~ Cocktail bar Pisa ~
+					</h2>
 				</div>
-				<div class="row">
-					<div class="col-md-8">
-						<h3 data-aos="fade-up-right">Location</h3>
-						<p data-aos="fade-up-right">
+			</div>
+			<div class="row">
+				<div class="col-md-8 tracking-in-contract-bck">
+					<div>
+						<h3>Location</h3>
+						<p>
 							Grazie per esserti fermato. Siamo l'ultimo autentico Cocktail bar
 							di Pisa italiano a Milano, che serve deliziosi cocktail! Creati e
 							shakerati appositamente per voi. Ti bastano pochi minuti per
@@ -212,8 +207,10 @@
 							cocktail list .Speriamo che ti unirai presto a noi per una superba
 							esperienza.
 						</p>
-						<h5 data-aos="fade-up-left">Un'esperienza unica</h5>
-						<p data-aos="fade-up-left">
+					</div>
+					<div>
+						<h5>Un'esperienza unica</h5>
+						<p>
 							Grazie per esserti fermato. Siamo l'ultimo autentico ristorante
 							italiano a Milano, che serve deliziosi piatti della cucina
 							italiana cucinati dai migliori chef. Ti bastano pochi minuti per
@@ -221,8 +218,10 @@
 							menu .Speriamo che ti unirai presto a noi per una superba
 							esperienza culinaria italiana.
 						</p>
-						<h5 data-aos="fade-up-right">Orari</h5>
-						<p data-aos="fade-up-right">
+					</div>
+					<div>
+						<h5>Orari</h5>
+						<p>
 							🍸Un bar dagli arredi unici e cocktails ricercati. <br />
 							📞 3803420113 <br />
 							❌ Chiuso il martedì <br />
@@ -232,87 +231,87 @@
 							Scriveteci qui per una prenotazione oppure chiamateci
 						</p>
 					</div>
-					<div class="col-md-4" data-aos="fade-up">
-						<img
-							class="img-fluid"
-							src="images/page/numerov.jpg"
-							height="512"
-							width="512"
-						/>
-					</div>
 				</div>
-				<!--- End of ChiSiamo -->
-				<!--- Start of CocktailList-->
-				<div class="row" id="CocktailList">
-					<div class="col navMenu">
-						<h2 class="text-center">~ Cocktail List ~</h2>
-					</div>
+				<div class="col-md-4">
+					<img
+						class="img-fluid"
+						src="images/page/numerov.jpg"
+						height="512"
+						width="512"
+					/>
 				</div>
-				<div class="row">
-					<div class="col" id="CocktailListMenu"></div>
+			</div>
+			<!--- End of ChiSiamo -->
+			<!--- Start of CocktailList-->
+			<div class="row" id="CocktailList">
+				<div class="col navMenu">
+					<h2 class="text-center">~ Cocktail List ~</h2>
 				</div>
-				<!--- End of CocktailList -->
-				<!--- Start of Dove Siamo -->
-				<div class="row" id="DoveSiamo">
-					<div class="col navMenu">
-						<h2 class="text-center">~ Dove Siamo ~</h2>
-					</div>
+			</div>
+			<div class="row">
+				<div class="col" id="CocktailListMenu"></div>
+			</div>
+			<!--- End of CocktailList -->
+			<!--- Start of Dove Siamo -->
+			<div class="row" id="DoveSiamo">
+				<div class="col navMenu">
+					<h2 class="text-center">~ Dove Siamo ~</h2>
 				</div>
-				<div class="row">
-					<div class="col">
-						<h3>Indirizzo:</h3>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h3>Indirizzo:</h3>
+					<a
+						style="cursor: pointer; position: relative; display: block"
+						href="https://www.google.it/maps/place/numeroventi/@43.719504,10.4032654,15z/data=!4m2!3m1!1s0x0:0x2b80f5749a16af3b?sa=X"
+						jsaction="trigger.Ez7VMc"
+						tabindex="0"
+						target="_blank"
+					>
+						<p>Via Santa Cecilia, 32/34, 56127 Pisa PI</p>
+					</a>
+				</div>
+			</div>
+			<!--- End o f Dove Siamo -->
+			<div class="row footer align-items-center justify-content-center">
+				<div class="col">
+					<p
+						class="text-center m-0 d-flex align-items-center justify-content-center"
+					>
+						Follow us:
 						<a
-							style="cursor: pointer; position: relative; display: block"
-							href="https://www.google.it/maps/place/numeroventi/@43.719504,10.4032654,15z/data=!4m2!3m1!1s0x0:0x2b80f5749a16af3b?sa=X"
-							jsaction="trigger.Ez7VMc"
-							tabindex="0"
+							class="social-icon pl-2"
 							target="_blank"
-						>
-							<p>Via Santa Cecilia, 32/34, 56127 Pisa PI</p>
-						</a>
-					</div>
-				</div>
-				<!--- End o f Dove Siamo -->
-				<div class="row footer align-items-center justify-content-center">
-					<div class="col">
-						<p
-							class="text-center m-0 d-flex align-items-center justify-content-center"
-						>
-							Follow us:
-							<a
-								class="social-icon pl-2"
-								target="_blank"
-								href="https://www.instagram.com/numeroventi_pisa/"
-								><i class="fab fa-instagram"></i
-							></a>
-							<!-- <a
+							href="https://www.instagram.com/numeroventi_pisa/"
+							><i class="fab fa-instagram"></i
+						></a>
+						<!-- <a
 								class="social-icon"
 								target="_blank"
 								href="https://www.facebook.com/rubiktechnologiesShpk/"
 								><i class="fab fa-facebook"></i
 							></a> -->
-						</p>
-					</div>
-					<div class="col m-0">
-						<p class="text-center">Copyright &copy; from 2022</p>
-					</div>
+					</p>
 				</div>
-				<div class="row">
-					<div class="col margin-mobile">
-						<p class="text-center">
-							<a
-								href="https://www.linkedin.com/in/fabiosalvini/"
-								class="text-secondary"
-								target="_blank"
-								>Salvini Fabio</a
-							>&nbsp;&&nbsp;<a
-								href="https://www.linkedin.com/in/laura-montagnani23/"
-								class="text-secondary"
-								target="_blank"
-								>Laura Montagnani</a
-							>
-						</p>
-					</div>
+				<div class="col m-0">
+					<p class="text-center">Copyright &copy; from 2022</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col margin-mobile">
+					<p class="text-center">
+						<a
+							href="https://www.linkedin.com/in/fabiosalvini/"
+							class="text-secondary"
+							target="_blank"
+							>Salvini Fabio</a
+						>&nbsp;&&nbsp;<a
+							href="https://www.linkedin.com/in/laura-montagnani23/"
+							class="text-secondary"
+							target="_blank"
+							>Laura Montagnani</a
+						>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -354,9 +353,7 @@
 			defer
 			src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
 		></script>
-		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 		<script type="text/javascript" src="js/menu.js"></script>
 		<script type="text/javascript" src="js/smooth-scroll.js"></script>
-		<script type="text/javascript" src="js/image-effect.js"></script>
 	</body>
 </html>
