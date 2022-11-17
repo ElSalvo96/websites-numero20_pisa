@@ -51,17 +51,12 @@ const createRow = (rowNumber) => {
 };
 const createCol = (item, rowNumber, colNumber) => {
     const col = document.createElement('div');
-    col.className = `col-12 col-md-6 col-lg-3 menuContainer py-1 px-1`;
+    col.className = `col-12 col-md-6 col-xl-3 menuContainer py-1 px-1`;
     const img = document.createElement('img');
     img.className = 'image';
     img.src = `images/menu/${item.source}`;
     img.alt = `${item.alt}`;
     img.loading = 'lazy';
-    // img.dataset.aos = 'flip-down';
-    // img.dataset.aosDuration = '2000';
-    // img.dataset.aosDelay = String(colNumber * 100);
-    // img.dataset.aosOffset = '0';
-    // img.dataset.mirror = 'true';
     const textDiv = document.createElement('div');
     textDiv.className = 'middle';
     const p = document.createElement('p');
