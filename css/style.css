@@ -23,6 +23,7 @@ body {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	pointer-events: none;
+	z-index: -1;
 }
 
 .loading .navbar {
@@ -38,15 +39,12 @@ body {
 	overflow: hidden;
 }
 
-.nav-item {
-	padding-right: 12px;
-	padding-left: 12px;
-}
-
 .nav-link.active {
-	background-color: rgb(235, 229, 229) !important;
+	background-color: rgb(1, 56, 84) !important;
 }
-
+.navBar {
+	background-color: rgb(72 47 86 / 70%) !important;
+}
 .navMenu {
 	padding-top: 75px;
 	padding-bottom: 20px;
