@@ -7,7 +7,7 @@ window.addEventListener('load', (event) => {
 
 		const loader = document.getElementById('loader');
 		loader.classList.remove('rotate-center');
-		loader.classList.add('slide-out-fwd-center');
+		loader.classList.add('rotate-out-center');
 		$('.carousel').carousel({
 			ride: true,
 		});
