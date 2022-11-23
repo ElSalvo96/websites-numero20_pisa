@@ -4,6 +4,11 @@ body {
 	overflow-x: hidden;
 }
 
+.overflow-hidden {
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
 #image-bg-object {
 	overflow: hidden;
 	position: fixed;
@@ -69,9 +74,12 @@ body {
 	animation: none;
 	transition: none;
 }
-
+.not-mobile {
+	visibility: visible;
+}
 .only-mobile {
 	visibility: hidden;
+	display: none !important;
 }
 
 footer {
@@ -89,6 +97,10 @@ footer {
 @media screen and (max-width: 575.98px) {
 	.only-mobile {
 		visibility: visible;
+	}
+	.not-mobile {
+		visibility: hidden;
+		display: none !important;
 	}
 	.margin-mobile {
 		margin-bottom: 2rem;
@@ -177,10 +189,10 @@ footer {
 	display: inline;
 	position: absolute;
 	background: #000;
-	width: 4px;
+	width: 5px;
 	height: 0px;
-	top: 15px;
-	left: 28px;
+	top: 44px;
+	left: 50px;
 	border-radius: 100px;
 	animation: pour-animate 4.8s linear infinite;
 }
