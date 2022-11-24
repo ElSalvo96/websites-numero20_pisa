@@ -23,3 +23,7 @@ In case of problems:
     Re/open an active terminal
 
     Use the tsc -v command to observe the result
+
+For minify code
+npm i uglify-js -g
+npm i uglifycss -g

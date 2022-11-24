@@ -5,7 +5,7 @@ type objImageSource = {
 	description: string;
 };
 function getConfig(): Promise<objImageSource[]> {
-	return fetch(`menu.json`, {
+	return fetch(`resources/menu.json`, {
 		headers: {
 			'Content-Type': 'application/json',
 			'Accept': 'application/json',

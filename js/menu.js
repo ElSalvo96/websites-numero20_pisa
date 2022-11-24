@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 const maxNumber = 4;
 function getConfig() {
-    return fetch(`menu.json`, {
+    return fetch(`resources/menu.json`, {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',

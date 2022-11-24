@@ -1,5 +1,5 @@
 const startTime = new Date().getTime();
-const minLoaderTimer = 3000;
+const minLoaderTimer = 2000;
 
 window.addEventListener('load', (event) => {
 	const doAction = () => {
