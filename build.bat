@@ -16,7 +16,7 @@ for %%f in (%copyDirCss%/*) do call uglifycss %copyDirCss%/%%f > %destinationDir
 for %%f in (%copyDirJs%/temp/*) do call uglifyjs %copyDirJs%/temp/%%f > %destinationDir%/%copyDirJs%/%%f
 
 
-html-minifier index.html --remove-comments --collapse-whitespace --minify-js --minify-css > %destinationDir%\index.html
+call html-minifier index.html --remove-comments --collapse-whitespace --minify-js --minify-css > %destinationDir%\index.html
 
 rmdir /s /q %destinationDir%\%copyDirResources%\original
 rmdir /s /q %copyDirJs%\temp
