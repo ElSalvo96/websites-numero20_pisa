@@ -97,6 +97,7 @@ footer {
 @media screen and (max-width: 575.98px) {
 	.only-mobile {
 		visibility: visible;
+		display: flex !important;
 	}
 	.not-mobile {
 		visibility: hidden;

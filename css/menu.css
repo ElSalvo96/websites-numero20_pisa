@@ -18,15 +18,15 @@
 	text-align: center;
 }
 
-.menuContainer:hover .image,
+/* .menuContainer:hover .image,
 .menuContainer:active .image {
 	opacity: 0.3;
-}
+} */
 
-.menuContainer:hover .middle,
+/* .menuContainer:hover .middle,
 .menuContainer:active .middle {
 	opacity: 1;
-}
+} */
 
 .menuContainer > .text {
 	background-color: #04aa6d;

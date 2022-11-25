@@ -27,3 +27,4 @@ In case of problems:
 For minify code
 npm i uglify-js -g
 npm i uglifycss -g
+npm install html-minifier -g
