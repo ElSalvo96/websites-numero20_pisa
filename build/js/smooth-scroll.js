@@ -1,1 +1,1 @@
-
+$(window).on("beforeunload",function(){$(window).scrollTop(0)});$(document).ready(function(){$("body").scrollspy({target:".navbar",offset:50});$("#navbarText a, #brand").on("click",function(event){if(this.hash!==""){event.preventDefault();const hash=this.hash;const scrollTop=$(hash).offset().top-30;$("html, body").animate({scrollTop:scrollTop},800,function(){window.location.hash=hash})}});$(".navbar-nav>li>a").on("click",function(){$(".navbar-collapse").collapse("hide")})});
