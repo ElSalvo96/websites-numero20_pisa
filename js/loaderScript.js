@@ -1,13 +1,12 @@
 const startTime = new Date().getTime();
-const minLoaderTimer = 3000;
+const minLoaderTimer = 2000;
 
 window.addEventListener('load', (event) => {
 	const doAction = () => {
 		document.body.classList.remove('loading');
 
 		const loader = document.getElementById('loader');
-		loader.classList.remove('rotate-center');
-		loader.classList.add('slide-out-fwd-center');
+		loader.classList.add('fade-out');
 		$('.carousel').carousel({
 			ride: true,
 		});

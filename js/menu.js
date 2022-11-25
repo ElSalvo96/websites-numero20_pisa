@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 const maxNumber = 4;
 function getConfig() {
-    return fetch(`menu.json`, {
+    return fetch(`resources/menu.json`, {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
@@ -43,7 +43,28 @@ const start = () => __awaiter(void 0, void 0, void 0, function* () {
         const col = createCol(item, rowNumber, colNumber);
         row.appendChild(col);
     });
+    CocktailListMenu.parentNode.appendChild(createDownloadButton(false));
+    document
+        .getElementById('CocktailList')
+        .appendChild(createDownloadButton(true));
 });
+const createDownloadButton = (isMobile) => {
+    const col = document.createElement('div');
+    col.className = `col-12 d-flex justify-content-center ${isMobile ? 'only-mobile' : 'not-mobile'}`;
+    const a = document.createElement('a');
+    a.className = `text-center text-white border p-2 border-primary rounded downloadTag mt-sm-2`;
+    a.href = '/resources/menu-numeroventi.pdf';
+    a.download = 'true';
+    const span = document.createElement('span');
+    span.className = `ml-2`;
+    span.textContent = `Download menu in PDF`;
+    const liquid = document.createElement('liquid');
+    liquid.className = `liquid`;
+    col.appendChild(a);
+    a.appendChild(span);
+    a.appendChild(liquid);
+    return col;
+};
 const createRow = (rowNumber) => {
     const row = document.createElement('div');
     row.className = `row`;
@@ -54,7 +75,7 @@ const createCol = (item, rowNumber, colNumber) => {
     col.className = `col-12 col-md-6 col-xl-3 menuContainer py-1 px-1`;
     const img = document.createElement('img');
     img.className = 'image';
-    img.src = `images/menu/${item.source}`;
+    img.src = `resources/menu/${item.source}`;
     img.alt = `${item.alt}`;
     img.loading = 'lazy';
     const textDiv = document.createElement('div');
