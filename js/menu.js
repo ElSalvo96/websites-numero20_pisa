@@ -54,7 +54,7 @@ const createDownloadButton = (isMobile) => {
     const a = document.createElement('a');
     a.className = `text-center text-white border p-2 border-primary rounded downloadTag mt-sm-2`;
     a.href = '/resources/menu-numeroventi.pdf';
-    a.download = 'true';
+    a.target = '_blank';
     const span = document.createElement('span');
     span.className = `ml-2`;
     span.textContent = `Download menu in PDF`;
