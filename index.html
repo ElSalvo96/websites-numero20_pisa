@@ -2,6 +2,40 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="numeroventi arriva a Pisa! Un luogo d'incontro e condivisione dal design accattivante, cocktails creativi e una soffusa atmosfera unica."
+		/>
+		<meta
+			name="keywords"
+			content="cocktail pisa, cocktail bar pisa, pisa, bar, cocktail,numeroventi,menu,cocktail list,bartender,barman "
+		/>
+
+		<!-- Schema.org markup for Google+ -->
+		<meta itemprop="name" content="numeroventi" />
+		<meta itemprop="description" content="Un nuovo cocktail bar a Pisa!" />
+		<meta itemprop="image" content="resources/logo.png" />
+
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="resources/logo.png" />
+		<!-- <meta name="twitter:site" content="@numeroventi"> -->
+		<meta name="twitter:title" content="numeroventi" />
+		<meta name="twitter:description" content="Un nuovo cocktail bar a Pisa!" />
+		<!-- <meta name="twitter:creator" content="@numeroventi">  -->
+		<!-- Twitter summary card with large image must be at least 280x150px -->
+		<meta name="twitter:image:src" content="resources/logo.png" />
+
+		<!-- Open Graph data -->
+		<meta property="og:title" content="numeroventi" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://numeroventi.net" />
+		<meta property="og:image" content="resources/logo.png" />
+		<meta property="og:description" content="Un nuovo cocktail bar a Pisa!" />
+		<meta property="og:site_name" content="numeroventi" />
+		<meta
+			property="article:published_time"
+			content="2022-12-06T05:59:00+01:00"
+		/>
 		<link
 			rel="stylesheet"
 			id="loaderStylesheet"
@@ -34,6 +68,21 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/effects.css" />
 		<link rel="stylesheet" type="text/css" href="css/menu.css" />
+
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-58LG6QV8SF"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-58LG6QV8SF');
+		</script>
 	</head>
 	<body
 		class="text-light bg-dark overflow-hidden loading"
@@ -45,7 +94,7 @@
 			<img
 				src="resources/background.jpg"
 				fetchPriority="high"
-				alt=""
+				alt="bg"
 				style="display: none"
 			/>
 		</div>
@@ -56,7 +105,7 @@
 				width="75"
 				height="75"
 				fetchPriority="high"
-				alt=""
+				alt="logo"
 			/>
 		</div>
 		<!---Start navigation Bar -->
@@ -243,7 +292,11 @@
 					</div>
 				</div>
 				<div class="col-md-4">
-					<img class="img-fluid" src="resources/page/numerov.jpg" />
+					<img
+						class="img-fluid"
+						src="resources/page/numerov.jpg"
+						alt="numeroventi front"
+					/>
 				</div>
 			</div>
 			<!--- End of ChiSiamo -->
