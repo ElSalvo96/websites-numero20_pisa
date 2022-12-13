@@ -3,6 +3,17 @@ const minLoaderTimer = 2000;
 
 window.addEventListener('load', (event) => {
 	const doAction = () => {
+		const targetDiv = document.getElementById('cookie');
+		const btn = document.getElementById('accept-btn');
+		btn.onclick = function () {
+			localStorage.setItem('numeroventi-cookie-accept', 'accept');
+			targetDiv.style.display = 'none';
+		};
+		const isCookieOk = localStorage.getItem('numeroventi-cookie-accept');
+		if (isCookieOk) {
+			btn.click();
+		}
+
 		document.body.classList.remove('loading');
 
 		const loader = document.getElementById('loader');
